@@ -36,9 +36,9 @@ $(function() {
                 $('input:not(.valid) ~ .invalid').fadeIn('medium').css('display', 'inline-block');
                 return;
             } else {
-                $('#content-' + nextStep).fadeOut('medium', function() {
+                $('#content-' + currentStep).fadeOut('medium', function() {
                     currentStep++;
-                    $('#content-' + nextStep).fadeIn('medium');
+                    $('#content-' + currentStep).fadeIn('medium');
                 });  
             }        
     };
