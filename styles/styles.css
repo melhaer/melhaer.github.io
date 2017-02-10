@@ -219,14 +219,13 @@ input[type=number] {
         padding: 5px;
    }
 
-   @supports (-webkit-appearance:none) {
-        #form-content input[type='checkbox'] {
-            margin: 4px 5px 0;
-        }
-   }
-
    label {
        display: inline;
+   }
+
+   #form-content .link-button {
+       display: block;
+       margin: 0 0 10px;
    }
 }
 
