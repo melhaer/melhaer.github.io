@@ -227,6 +227,12 @@ input[type=number] {
        display: block;
        margin: 0 0 10px;
    }
+
+   #form-content .next-step {
+       width: 100%;
+       display: block;
+       margin: 0 0 10px;
+   }
 }
 
 /* Extra Small Devices, Phones */ 
