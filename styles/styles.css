@@ -230,6 +230,7 @@ input[type=number] {
    }
 
    #form-content .next-step {
+       width: 100%;
        display: block;
        margin: 0 0 10px;
    }
