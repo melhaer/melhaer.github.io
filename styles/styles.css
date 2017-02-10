@@ -205,7 +205,9 @@ input[type=number] {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    #form-content {
+        width: 100vw;
+    }
 }
 
 /* Small Devices, Tablets */
