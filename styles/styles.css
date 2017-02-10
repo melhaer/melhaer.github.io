@@ -215,6 +215,10 @@ input[type=number] {
         padding: 5px;
    }
 
+   .form-row {
+       font-size: 2em;
+   }
+
    #form-content input[type='checkbox'] {
         margin: -1px 5px 0;
     }
