@@ -205,9 +205,7 @@ input[type=number] {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-     #form-content {
-        width: auto;
-    }
+     
 }
 
 /* Small Devices, Tablets */
@@ -217,8 +215,13 @@ input[type=number] {
     }
 
    #wrapper {
+        width: 100%; 
         padding: 5px;
    }
+
+   #form-content {
+       max-width: 25em;
+     }
 
    label {
        display: inline;
@@ -238,7 +241,9 @@ input[type=number] {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    
+    #form-content {
+       width: auto;
+     }
 }
 
 /* Custom, iPhone Retina */ 
