@@ -206,7 +206,7 @@ input[type=number] {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
      #form-content {
-        
+        width: auto;
     }
 }
 
@@ -217,7 +217,6 @@ input[type=number] {
     }
 
    #wrapper {
-        width: auto; 
         padding: 5px;
    }
 
@@ -239,10 +238,6 @@ input[type=number] {
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
     
-
-    #form-content {
-        width: auto;
-    }
 }
 
 /* Custom, iPhone Retina */ 
