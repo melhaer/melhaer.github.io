@@ -210,13 +210,13 @@ input[type=number] {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    body{
+        font-size: 20px;
+    }
+
    #wrapper {
         width: auto; 
         padding: 5px;
-   }
-
-   .form-row {
-       font-size: 2em;
    }
 
    #form-content input[type='checkbox'] {
