@@ -217,6 +217,7 @@ input[type=number] {
     }
 
    #wrapper {
+        width: auto; 
         padding: 5px;
    }
 
