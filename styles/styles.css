@@ -219,9 +219,11 @@ input[type=number] {
         padding: 5px;
    }
 
-   #form-content input[type='checkbox'] {
-        margin: -1px 5px 0;
-    }
+   @supports (-webkit-appearance:none) {
+        #form-content input[type='checkbox'] {
+            margin: -1px 5px 0;
+        }
+   }
 
    label {
        display: inline;
