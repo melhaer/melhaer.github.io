@@ -211,13 +211,13 @@ input[type=number] {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
    #wrapper {
-        font-size: 200% !important;
+        font-size: 2em;
         width: auto; 
         padding: 5px;
    }
 
    #form-content input[type='checkbox'] {
-        margin: 0 5px 0;
+        margin: -1px 5px 0;
     }
 
    label {
