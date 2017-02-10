@@ -211,7 +211,6 @@ input[type=number] {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
    #wrapper {
-        font-size: 5em !important;
         width: auto; 
         padding: 5px;
    }
