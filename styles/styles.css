@@ -221,7 +221,7 @@ input[type=number] {
 
    @supports (-webkit-appearance:none) {
         #form-content input[type='checkbox'] {
-            margin: -1px 5px 0;
+            margin: 4px 5px 0;
         }
    }
 
