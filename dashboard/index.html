@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="wrapper" class="container-fluid">
+        
+        <div id="header" class="row no-gutters">
+            <div id="logo" class="col-12">
+                <a href="index.html" title="Go to Home Page"><img src="images/logo.png" alt="Logo - Go to Home Page" /></a>
+            </div>
+             <div id="horizontal-nav" class="col-12">
+                 <div class="row">
+                     <div class="col-md-2">
+                         <div id="search-box">
+                            <form method="post">
+                                <input type="search" id="search-box" />
+                                <button class="fa fa-search" title="Search"></button>
+                            </form>
+                        </div>
+                    </div>
+                     <div class="col-md-2 col-md-offset-8 col-sm-offset-0">
+                         <ul id="header-nav">
+                             <li><a href="#" class="fa fa-ellipsis-v" title="More Options"></a></li>
+                             <li><a href="#" class="fa fa-envelope" title="Inbox"></a></li>
+                             <li><a href="#" class="fa fa-cog" title="Settings"></a></li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <!-- #header end -->
+
+        <div class="row">
+            <div id="sidebar" class="col-xs-12 col-sm-4 col-md-2">
+                <div id="user">
+                    <div class="left-content dib">
+                        <a href="#" title="John Smith"><span class="user-img dib"><img src="images/user-img.jpg" alt="John Smith" /></span></a>
+                    </div>
+                    <div class="right-content dib">
+                        <span class="user-name dib">John Smith</span>
+                        <span class="user-location dib"><span class="fa fa-map-marker"></span>Sofia, Bulgaria</span>
+                    </div>
+                </div>
+                <!-- #user end -->
+                <ul id="vertical-nav">
+                    <li class="mobile-nav"><a href="" title="" class="fa fa-bars"></a></li>
+                    <li><a href="" title="" class="item-current"><span class="fa fa-user"></span>My Profile</a></li>
+                    <li><a href="" title=""><span class="fa fa-home"></span>Dashboard</a></li>
+                    <li><a href="" title=""><span class="fa fa-bar-chart"></span>Statistics</a></li>
+                    <li><a href="" title=""><span class="fa fa-heart"></span>Favorites</a></li>
+                    <li><a href="" title=""><span class="fa fa-window-maximize"></span>Withdrawal</a></li>
+                    <li><a href="" title=""><span class="fa fa-cloud"></span>My Cloud</a></li>
+                    <li><a href="" title=""><span class="fa fa-check-circle-o"></span>My Tasks</a></li>
+                    <li><a href="" title=""><span class="fa fa-sticky-note-o"></span>Notes</a></li>
+                </ul>
+                <!-- #vertical-nav end -->
+            </div>
+            <!-- #sidebar end -->
+            <div id="main-content" class="col-xs-12 col-sm-8 col-md-10">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-10">
+                        <h2>Buttons</h2>
+                        <button class="button">Button</button>
+                        <button class="button primary-button">Primary Button</button>
+                        <button class="button primary-button" disabled="disabled">Disabled Button</button>
+
+                        <input type="button" value="Input Type Button" class="button" />
+                        <input type="button" value="Input Type Button Primary" class="button primary-button" />
+                        <input type="button" value="Input Type Button Primary Disabled" class="button primary-button" disabled="disabled" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-10">
+                        <h1>Heading H1</h1>
+                        <h2>Heading H1</h2>
+                        <h3>Heading H1</h3>
+                        <h4>Heading H1</h4>
+                        <h5>Heading H1</h5>
+                        <h6>Heading H1</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#" title="">This is a Link and has alaso a visited state</a>
+                       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis accumsan nulla, a vehicula justo. Suspendisse vitae orci sit amet quam vehicula accumsan id nec nibh. Phasellus elementum sed odio sed scelerisque. Praesent interdum elit quis ligula semper tincidunt. Aliquam commodo, diam ac fringilla venenatis, turpis leo sodales diam, a lobortis risus est et tellus. Ut facilisis tortor vel dui lacinia dignissim. Vivamus sit amet egestas quam. Vivamus id gravida elit. Proin vitae blandit orci, et laoreet turpis. Fusce fringilla enim leo, non faucibus justo dictum eget. Nunc faucibus mauris eu ligula posuere, vel gravida libero bibendum. Maecenas sit amet urna libero. Cras elementum suscipit turpis sit amet gravida. Integer maximus lectus a lorem eleifend, quis suscipit neque euismod. Vivamus a mi nec urna hendrerit semper.</p>
+
+                        <p>Donec molestie felis quis tellus laoreet, eu feugiat libero venenatis. Nam sodales varius arcu sit amet iaculis. Pellentesque in sem eget mauris dapibus fermentum. Proin tincidunt dictum nulla et tempor. Morbi erat lorem, blandit sed dapibus nec, convallis et mi. Phasellus aliquet arcu a ipsum imperdiet, rutrum mattis eros faucibus. Pellentesque vitae scelerisque enim. Quisque dignissim malesuada feugiat. Proin ac gravida erat. Nullam convallis placerat nisi, sed convallis nisi sollicitudin sollicitudin. Aliquam bibendum tincidunt nunc. Proin blandit molestie turpis, sed efficitur turpis vehicula ac. Sed eget nisi nec nisl mattis efficitur eget vitae ipsum. Cras aliquam auctor enim.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Form Elements</h2>
+                        <form>
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" />
+                            <br /><br />
+                            <label for="description">Description:</label>
+                            <textarea id="description"></textarea>
+                            <br /><br />
+                            <button class="button primary-button">Submit</button>
+                            <button class="button">Clear</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <div class="box-wrapper">
+                            <h4>Box Title</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis accumsan nulla, a vehicula justo. Suspendisse vitae orci sit amet quam vehicula accumsan id nec nibh.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-8">
+                        <div class="box-wrapper">
+                            <h4>Box Title</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis accumsan nulla, a vehicula justo. Suspendisse vitae orci sit amet quam vehicula accumsan id nec nibh.</p>
+                        </div>
+                        <div class="box-wrapper">
+                            <h4>Box Title</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis accumsan nulla, a vehicula justo. Suspendisse vitae orci sit amet quam vehicula accumsan id nec nibh.</p>
+                        </div>
+                        <div class="box-wrapper">
+                            <h4>Box Title</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis accumsan nulla, a vehicula justo. Suspendisse vitae orci sit amet quam vehicula accumsan id nec nibh.</p>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+        <!-- #main-content end -->
+
+    </div>
+    <!-- #wrapper end -->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
