@@ -49,8 +49,8 @@
                     </div>
                 </div>
                 <!-- #user end -->
+                <span title="Open Navigation" class="mobile-nav"><span class="fa fa-bars"></span></span>
                 <ul id="vertical-nav">
-                    <li class="mobile-nav"><a href="" title="" class="fa fa-bars"></a></li>
                     <li><a href="" title="" class="item-current"><span class="fa fa-user"></span>My Profile</a></li>
                     <li><a href="" title=""><span class="fa fa-home"></span>Dashboard</a></li>
                     <li><a href="" title=""><span class="fa fa-bar-chart"></span>Statistics</a></li>
@@ -143,6 +143,15 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+
+        $('.mobile-nav').on('click', function() {
+            $('#vertical-nav').slideToggle();
+        })
+
+    });
+</script>
 </body>
 
 </html>

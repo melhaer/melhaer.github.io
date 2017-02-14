@@ -273,6 +273,11 @@ input:active {
 
 /* Footer styles */
 
+/* Hamburger Styles */
+.mobile-nav {
+    display: none;
+}
+
 /* Media Queries */
 
 @media (max-width: 1260px) {
@@ -325,17 +330,18 @@ input:active {
         display: none;
     }
 
-    #vertical-nav li {
-        display: none;
-    }
-
-    #vertical-nav .mobile-nav {
+    .mobile-nav {
         display: block;
+        width: 2em;
+        height: 2em;
         text-align: center;
+        margin: auto;
+        font-size: 1.3em;
+        cursor: default;
     }
-
-    #vertical-nav .mobile-nav:hover + li, #vertical-nav .mobile-nav:hover + li + li {
-        display: block;
+    
+    #vertical-nav {
+        display: none;
     }
 
  }
