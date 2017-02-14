@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="styles/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="wrapper" class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div id="form-content">
+                        <form method="post">
+                            <div id="content-1" class="form-tab visible">
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-envelope"></span>
+                                    <input id="email" type="email" placeholder="Email" />
+                                    <span class="invalid">Please, enter a valid e-mail address.</span>
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-user-o"></span>
+                                    <input id="first_name" type="text" placeholder="First Name" />
+                                    <span class="invalid">Please, enter your name.</span>
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-user"></span>
+                                    <input id="username" type="text" placeholder="Username" />
+                                    <span class="invalid">Username have to contains minimum 4 charachters and maximum 12 characters.</span>
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-lock"></span>
+                                    <input id="password" type="password" placeholder="Password" />
+                                    <span class="invalid">Password have to contains minimum 6 charachters and maximum 12 characters, at least one capital letter, 
+                                        one lower-case letter, one number or special character: !@#$%^&amp;*()_+-= .</span>
+                                </div>
+                                <div class="form-row">
+                                    <input id="terms" type="checkbox" /><label for="terms" class="check">By checking this box, I agree to <a href="" class="popup">Terms &amp; Conditions</a> of the site.</label>
+                                     <span class="invalid">You need to agree with Terms &amp; Cоnditions in order to proceed further.</span>
+                                </div>
+                                <div class="form-row">
+                                    <div class="buttons">
+                                        <input id="submit-req" class="next-step" type="button" value="Submit" title="Submit the information to the Casino" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                            <div id="content-2" class="form-tab form-tab-msg">
+                                <div>
+                                    <strong>You’re Ready to Play!</strong>
+                                    <p>In order to play with real money, you will need to provide more information. You can do so now if you wish, or skip and do it at a later time.</p>
+                                    <div>
+                                            <a href="#" class="link-button primary-link-button next-step">Continue Registration</a>
+                                            <a href="http://www.casino.com/" class="link-button skip" title="Skip Registration and go to Play!">Skip</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content-3" class="form-tab">
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-address-card"></span>
+                                    <input id="address1" type="text" placeholder="Address 1" />
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-address-card"></span>
+                                    <input id="address2" type="text" placeholder="Address 2" />
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-map-marker"></span>
+                                    <input id="city" type="text" placeholder="City" />
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-globe"></span>
+                                    <input id="country" type="text" placeholder="Country" />
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-address-book"></span>
+                                    <input id="postal-code" type="number" placeholder="Postal Code" />
+                                </div>
+                                <div class="form-row form-row-text-input">
+                                    <span class="fa fa-phone-square"></span>
+                                    <input id="postal-code" type="tel" placeholder="Phone Number" />
+                                </div>
+                                <div class="form-row">
+                                    <input id="bonus-check" type="checkbox" /><label for="bonus-check" class="check">Do you have a bonus code? Click here.</label>
+                                </div>
+                                <div class="form-row form-row-text-input bonus-code">
+                                    <span class="fa fa-plus"></span>
+                                    <input id="postal-code" type="text" placeholder="Bonus Code" />
+                                </div>
+                                <div class="form-row">
+                                    <div class="buttons">
+                                         <input id="complete-reg" class="next-step" type="button" value="Complete Registration" title="Complete Registration" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content-4" class="form-tab form-tab-msg">
+                                <div>
+                                    <strong>Thank You!</strong>
+                                    <p>You can now play with real money. Have fun, and good luck!</p>
+                                    <div>
+                                        <a href="http://www.casino.com/casino-games/" class="link-button primary-link-button" title="Play Now">Play Now</a>
+                                        <a href="http://www.casino.com/promotions/" class="link-button" title="Promotions">Promotions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
+    </body>
+</html>
+ 
