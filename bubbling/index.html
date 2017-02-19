@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #wrapper {
+                padding: 30px;
+                width: 30em;
+                margin: auto;
+                background-color: #eee;
+            }
+
+            #outer1, #outer2 {
+                background-color: #fff;
+                padding: 20px;
+            }
+
+            #outer2 {
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="wrapper">
+            <p>Both button and its wrapping element have click events and when button is clicked, 
+                it changes its text and bubbling goes to the outer elements and chnages its background color. 
+                If only the outer element is clicked, the button text will not be changed.</p>
+            <div id="outer1">
+                <button id="button1">Button</button>
+            </div>
+            <p>Both button and its wrapping element have click events but when button is clicked, 
+                a stopPropagation() event is called and prevents the bubbling to execute the click event of the outer element.</p>
+            <div id="outer2">
+                <button id="button2">Button 2</button>
+            </div>
+
+        </div>
+        <script>
+            
+    function clicked1() {
+
+    var outer = document.getElementById("outer1"),
+        btn = document.getElementById("button1");
+
+        btn.addEventListener("click", function(){
+            this.innerHTML = "Button Clicked";
+        });
+
+        outer.addEventListener('click', function(){
+            this.style.backgroundColor = "#dddddd";
+        });
+    }
+
+    clicked1();
+
+    function clicked2() {
+
+    var outer = document.getElementById("outer2"),
+        btn = document.getElementById("button2");
+
+        btn.addEventListener("click", function(event){
+            this.innerHTML = "Button 2 Clicked";
+            event.stopPropagation();
+        });
+
+        outer.addEventListener('click', function(){
+            this.style.backgroundColor = "aqua";
+        });
+    }
+
+    clicked2();
+
+        </script>
+    </body>
+</html>
